@@ -12,4 +12,7 @@ tasks {
     wrapper {
         gradleVersion = "9.2.1"
     }
+    withType<JavaExec> {
+        jvmArgs = listOf("-Xmx64g")
+    }
 }
